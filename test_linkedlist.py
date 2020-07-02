@@ -1,5 +1,5 @@
 import unittest
-from singly_linkedlist import LinkedList
+from doubly_linkedlist import LinkedList
 
 class LinkedListTests(unittest.TestCase):
 	def test_size_when_empty_linkedlist(self):
@@ -65,7 +65,7 @@ class LinkedListTests(unittest.TestCase):
 
 		# Assert
 		self.assertTrue(found)
-		# self.assertEqual("Umair", found.data)
+		self.assertEqual("Umair", found.data)
 
 	def test_find_when_when_non_empty_linked_list_and_item_is_not_present(self):
 		# Arrange

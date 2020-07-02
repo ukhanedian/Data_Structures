@@ -147,7 +147,7 @@ class LinkedList(object):
 			this_node = next_node
 		self.head = prev_node
 
-	def reverse(self, method = "recurrsive"):
+	def reverse(self, method = "iterative"):
 		if method == "iterative":
 			return self._reverse_iterative()
 		else:
